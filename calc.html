@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script defer src="calc.js"></script>
+</head>
+<body>
+    <div class="main">
+        <input id="num1" class="input-field" type="number">
+
+        <div class="btns">
+            <button id="plus" class="operator" onclick="setOperator('+')">+</button>
+            <button id="minus" class="operator" onclick="setOperator('-')">-</button>
+            <button id="times" class="operator" onclick="setOperator('*')">x</button>
+            <button id="divide" class="operator" onclick="setOperator('/')">/</button>
+        </div>
+
+        <input id="num2" class="input-field" type="number">
+        <br>
+        <button class="calc-btn" onclick="calc()">Ответ</button>
+
+        <p>Или введите вручную </p>
+        <input id="equation" class="input-field" type="text">
+        <button class="calc-btn" onclick="calc2()">Ответ</button>
+
+        <p class="result" id="result"></p>
+    </div>
+</body>
+</html>
